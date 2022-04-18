@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="row">
+      <div class="card col-md-3 text-center">
+        <div class="card-header">
+          Bài 1
+          <div class="form-group">
+            <div class="col-12">
+              <input id="num_1" type="text"
+                class="form-control" placeholder="Nhập vào SNT 1" value="">
+              <input id="num_2" type="text"
+                class="form-control" placeholder="Nhập vào SNT 2" value="">
+              <input id="num_3" type="text"
+                class="form-control" placeholder="Nhập vào SNT 3" value="">
+            </div>
+            <button id="enterExc_1" class="btn btn-primary mt-4">Enter</button>
+          </div>
+        </div>
+        <div class="card-body">
+          -đầu vào<br>
+          cho người dùng nhập vào 3 số<br>
+          -xử lý<br>
+          so sánh số thứ nhất số thứ 2 và số thứ 3 rồi so sánh tiếp số thứ 2 và
+          thứ 3<br>
+          lần lượt thực hiện lại<br>
+          -đầu ra<br>
+          dãy số theo thứ tự tăng dần
+        </div>
+        <div class="card-footer text-muted">
+          Kết quả
+          <div id="resultExc_1"></div>
+        </div>
+      </div>
+      <div class="card col-md-3 text-center">
+        <div class="card">
+          <div class="card-header">
+            Bài 2
+            <div class="col-12">
+              <input id="user" type="text"
+                class="form-control" placeholder="Ai đang sử dụng" value="">
+            </div>
+            <button id="enterExc_2" class="btn btn-primary mt-4">Enter</button>
+          </div>
+          <div class="card-body">
+            -đầu vào<br>
+            cho người dùng nhập vào<br>
+            -xử lý<br>
+            so sánh tên nhập vào và tên trong gđ
+            nếu đúng tên thành viên B,M,A,E<br>
+            -kết quả<br>
+            màn hình hiện ra lời chào phù hợp
+          </div>
+          <div class="card-footer text-muted">
+            Kết quả
+            <div id="resultExc_2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card col-md-3 text-center">
+        <div class="card">
+          <div class="card-header">
+            Bài 3
+            <div class="col-12">
+              <input id="inputNumber" type="text"
+                class="form-control" placeholder="Nhập vào số nguyên" value="">
+            </div>
+            <button id="enterExc_3" class="btn btn-primary mt-4">Enter</button>
+          </div>
+          <div class="card-body">
+            -đầu vào<br>
+            cho người dùng nhập vào 1 số nguyên
+            -xử lý<br>
+            chia lấy phần dư cho 2<br>
+            nếu khác 0 thì số đó là số lẻ <br>
+            kêt quả<br>
+            xuất ra màn hình kết luận là số chẵn hay số lẻ
+          </div>
+          <div class="card-footer text-muted">
+            Kết quả
+            <div id="resultExc_3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card col-md-3 text-center">
+        <div class="card">
+          <div class="card-header">
+            Bài 4
+            <div class="col-12">
+              <input id="inputAB" type="text"
+                class="form-control" placeholder="Nhập cạnh AB" value="">
+              <input id="inputAC" type="text"
+                class="form-control" placeholder="Nhập cạnh AC" value="">
+              <input id="inputBC" type="text"
+                class="form-control" placeholder="Nhập cạnh BC" value="">
+            </div>
+            <button id="enterExc_4" class="btn btn-primary mt-4">Enter</button>
+          </div>
+          <div class="card-body">
+            -đầu vào<br>
+            cho người dùng nhập vào 3 cạnh của tam giác<br>
+            -xử lý<br>
+            so sánh chiều dài 3 cạnh<br>
+            nếu 3 cạnh bằng nhau => tam giác đều<br>
+            nếu có 2 trong 3 cạnh bằng nhau => tam giác cân<br>
+            nếu tổng bình phương 2 cạnh góc bằng bình phương cạnh 3 => tam giác
+            vuông
+            <br>
+            -kết quả<br>
+            thuộc 1 trong 3 loại tam giác
+          </div>
+          <div class="card-footer text-muted">
+            Kết quả
+            <div id="resultExc_4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
